@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleInvoicesProject.BLL",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleInvoicesProject.WebApp", "SimpleInvoicesProject.WebApp\SimpleInvoicesProject.WebApp.csproj", "{A3231EA1-D506-409F-8094-FA2388228A5C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleInvoicesProject.DTOs", "SimpleInvoicesProject.DTOs\SimpleInvoicesProject.DTOs.csproj", "{FDAC67D0-1334-4C90-A74C-5B4474015B7D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{A3231EA1-D506-409F-8094-FA2388228A5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3231EA1-D506-409F-8094-FA2388228A5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A3231EA1-D506-409F-8094-FA2388228A5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDAC67D0-1334-4C90-A74C-5B4474015B7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDAC67D0-1334-4C90-A74C-5B4474015B7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDAC67D0-1334-4C90-A74C-5B4474015B7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDAC67D0-1334-4C90-A74C-5B4474015B7D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
