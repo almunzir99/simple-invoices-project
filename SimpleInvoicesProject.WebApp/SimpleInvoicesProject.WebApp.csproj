@@ -33,6 +33,10 @@
       <ProjectReference Include="..\SimpleInvoicesProject.DAL\SimpleInvoicesProject.DAL.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="ClientApp\.angular\cache\13.3.10\angular-webpack\628a05c2d1e688d2348fa43f8f005d274a8feb26" />
+    </ItemGroup>
+
     <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
         <!-- Ensure Node.js is installed -->
         <Exec Command="node --version" ContinueOnError="true">
