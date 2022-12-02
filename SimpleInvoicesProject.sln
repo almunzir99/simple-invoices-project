@@ -1,10 +1,10 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleInvoicesProject_DAL", "SimpleInvoicesProject_DAL\SimpleInvoicesProject_DAL.csproj", "{E47B0113-5ED5-4188-99EA-6840905830D9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleInvoicesProject.DAL", "SimpleInvoicesProject.DAL\SimpleInvoicesProject.DAL.csproj", "{E47B0113-5ED5-4188-99EA-6840905830D9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleInvoicesProject_BAL", "SimpleInvoicesProject_BAL\SimpleInvoicesProject_BAL.csproj", "{EB00807C-9684-4F89-91E0-4BDF3476ABF4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleInvoicesProject.BLL", "SimpleInvoicesProject.BLL\SimpleInvoicesProject.BLL.csproj", "{EB00807C-9684-4F89-91E0-4BDF3476ABF4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleInvoicesProject_WebApp", "SimpleInvoicesProject_WebApp\SimpleInvoicesProject_WebApp.csproj", "{A3231EA1-D506-409F-8094-FA2388228A5C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleInvoicesProject.WebApp", "SimpleInvoicesProject.WebApp\SimpleInvoicesProject.WebApp.csproj", "{A3231EA1-D506-409F-8094-FA2388228A5C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
