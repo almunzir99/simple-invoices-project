@@ -1,4 +1,5 @@
 import { Component, Inject, OnInit } from '@angular/core';
+import { Validators } from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute } from '@angular/router';
 import { firstValueFrom } from 'rxjs';
@@ -157,14 +158,20 @@ export class InvoicesComponent implements OnInit {
             title: 'Invoice Date',
             controlType: ControlTypes.DatePicker,
             value: item ? item.date : undefined,
-            width: '50%'
+            width: '50%',
+            validators: [
+              Validators.required
+            ]
           },
           {
             name: 'value',
             title: 'Invoice Value',
             controlType: ControlTypes.NumberInput,
             value: item ? item.value : undefined,
-            width: '50%'
+            width: '50%',
+            validators: [
+              Validators.required
+            ]
           },
           {
             name: 'state',
@@ -173,7 +180,10 @@ export class InvoicesComponent implements OnInit {
             data:this.states,
             valueProp:'index',
             value: item ? item.state : undefined,
-            width: '100%'
+            width: '100%',
+            validators: [
+              Validators.required
+            ]
           },
 
         ]

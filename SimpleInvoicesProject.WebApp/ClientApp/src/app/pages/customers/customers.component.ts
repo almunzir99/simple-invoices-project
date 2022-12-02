@@ -1,4 +1,5 @@
 import {Component, Inject, OnInit} from '@angular/core';
+import { Validators } from '@angular/forms';
 import {MatDialog} from '@angular/material/dialog';
 import {firstValueFrom} from 'rxjs';
 import {Customer} from 'src/app/core/models/customers.model';
@@ -168,14 +169,24 @@ export class CustomersComponent implements OnInit {
             title: 'Customer Name',
             controlType: ControlTypes.TextInput,
             value: item ? item.customerName : undefined,
-            width: '100%'
+            width: '100%',
+            validators: [
+              Validators.required,
+              Validators.minLength(3)
+            ]
           },
           {
             name: 'phoneNumber',
             title: 'Customer Phone',
             controlType: ControlTypes.NumberInput,
             value: item ? item.phoneNumber : undefined,
-            width: '100%'
+            width: '100%',
+            validators: [
+              Validators.required,
+              Validators.minLength(9),
+              Validators.maxLength(13),
+
+            ]
           },
 
         ]
