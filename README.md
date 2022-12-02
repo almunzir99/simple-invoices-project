@@ -7,6 +7,3 @@ Simple CRUD Application for Managing Customer Invoices built with Asp.net Core 6
 4. EF Core
 5. Automapper
 6. Angular Material
-
-### Screenshots
-
