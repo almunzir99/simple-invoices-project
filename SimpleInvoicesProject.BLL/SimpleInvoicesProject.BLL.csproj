@@ -7,4 +7,13 @@
         <RootNamespace>SimpleInvoicesProject.BAL</RootNamespace>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\SimpleInvoicesProject.DTOs\SimpleInvoicesProject.DTOs.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="AutoMapper" Version="12.0.0" />
+      <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+    </ItemGroup>
+
 </Project>

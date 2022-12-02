@@ -1,3 +1,4 @@
+using SimpleInvoicesProject.BAL.DI;
 using SimpleInvoicesProject.DAL.Database;
 using SimpleInvoicesProject.DAL.DI;
 
@@ -8,6 +9,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.RegisterDbContext<AppDbContext>(configuration:builder.Configuration);
 builder.Services.RegisterRepositories();
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+builder.Services.RegisterRequiredServices();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -26,6 +29,5 @@ app.MapControllerRoute(
     pattern: "{controller}/{action=Index}/{id?}");
 
 app.MapFallbackToFile("index.html");
-;
 
 app.Run();

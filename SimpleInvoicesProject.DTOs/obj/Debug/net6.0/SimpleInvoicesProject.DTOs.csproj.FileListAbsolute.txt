@@ -1,0 +1,15 @@
+C:\Users\hp\Desktop\Project\SimpleInvoicesProject\SimpleInvoicesProject.DTOs\bin\Debug\net6.0\SimpleInvoicesProject.DTOs.deps.json
+C:\Users\hp\Desktop\Project\SimpleInvoicesProject\SimpleInvoicesProject.DTOs\bin\Debug\net6.0\SimpleInvoicesProject.DTOs.dll
+C:\Users\hp\Desktop\Project\SimpleInvoicesProject\SimpleInvoicesProject.DTOs\bin\Debug\net6.0\SimpleInvoicesProject.DTOs.pdb
+C:\Users\hp\Desktop\Project\SimpleInvoicesProject\SimpleInvoicesProject.DTOs\bin\Debug\net6.0\SimpleInvoicesProject.DAL.dll
+C:\Users\hp\Desktop\Project\SimpleInvoicesProject\SimpleInvoicesProject.DTOs\bin\Debug\net6.0\SimpleInvoicesProject.DAL.pdb
+C:\Users\hp\Desktop\Project\SimpleInvoicesProject\SimpleInvoicesProject.DTOs\obj\Debug\net6.0\SimpleInvoicesProject.DTOs.csproj.AssemblyReference.cache
+C:\Users\hp\Desktop\Project\SimpleInvoicesProject\SimpleInvoicesProject.DTOs\obj\Debug\net6.0\SimpleInvoicesProject.DTOs.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\Desktop\Project\SimpleInvoicesProject\SimpleInvoicesProject.DTOs\obj\Debug\net6.0\SimpleInvoicesProject.DTOs.AssemblyInfoInputs.cache
+C:\Users\hp\Desktop\Project\SimpleInvoicesProject\SimpleInvoicesProject.DTOs\obj\Debug\net6.0\SimpleInvoicesProject.DTOs.AssemblyInfo.cs
+C:\Users\hp\Desktop\Project\SimpleInvoicesProject\SimpleInvoicesProject.DTOs\obj\Debug\net6.0\SimpleInvoicesProject.DTOs.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\Project\SimpleInvoicesProject\SimpleInvoicesProject.DTOs\obj\Debug\net6.0\SimpleInvoicesProject.DTOs.csproj.CopyComplete
+C:\Users\hp\Desktop\Project\SimpleInvoicesProject\SimpleInvoicesProject.DTOs\obj\Debug\net6.0\SimpleInvoicesProject.DTOs.dll
+C:\Users\hp\Desktop\Project\SimpleInvoicesProject\SimpleInvoicesProject.DTOs\obj\Debug\net6.0\refint\SimpleInvoicesProject.DTOs.dll
+C:\Users\hp\Desktop\Project\SimpleInvoicesProject\SimpleInvoicesProject.DTOs\obj\Debug\net6.0\SimpleInvoicesProject.DTOs.pdb
+C:\Users\hp\Desktop\Project\SimpleInvoicesProject\SimpleInvoicesProject.DTOs\obj\Debug\net6.0\ref\SimpleInvoicesProject.DTOs.dll

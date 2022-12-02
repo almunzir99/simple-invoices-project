@@ -10,3 +10,8 @@ C:\Users\hp\Desktop\Project\SimpleInvoicesProject\SimpleInvoicesProject.BLL\obj\
 C:\Users\hp\Desktop\Project\SimpleInvoicesProject\SimpleInvoicesProject.BLL\obj\Debug\net6.0\refint\SimpleInvoicesProject.BLL.dll
 C:\Users\hp\Desktop\Project\SimpleInvoicesProject\SimpleInvoicesProject.BLL\obj\Debug\net6.0\SimpleInvoicesProject.BLL.pdb
 C:\Users\hp\Desktop\Project\SimpleInvoicesProject\SimpleInvoicesProject.BLL\obj\Debug\net6.0\ref\SimpleInvoicesProject.BLL.dll
+C:\Users\hp\Desktop\Project\SimpleInvoicesProject\SimpleInvoicesProject.BLL\bin\Debug\net6.0\SimpleInvoicesProject.DAL.dll
+C:\Users\hp\Desktop\Project\SimpleInvoicesProject\SimpleInvoicesProject.BLL\bin\Debug\net6.0\SimpleInvoicesProject.DTOs.dll
+C:\Users\hp\Desktop\Project\SimpleInvoicesProject\SimpleInvoicesProject.BLL\bin\Debug\net6.0\SimpleInvoicesProject.DTOs.pdb
+C:\Users\hp\Desktop\Project\SimpleInvoicesProject\SimpleInvoicesProject.BLL\bin\Debug\net6.0\SimpleInvoicesProject.DAL.pdb
+C:\Users\hp\Desktop\Project\SimpleInvoicesProject\SimpleInvoicesProject.BLL\obj\Debug\net6.0\SimpleInvoicesProject.BLL.csproj.CopyComplete
