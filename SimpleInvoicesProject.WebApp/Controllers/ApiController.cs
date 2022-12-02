@@ -8,6 +8,8 @@ using SimpleInvoicesProject.WebApp.Interfaces;
 
 namespace SimpleInvoicesProject.WebApp.Controllers;
 
+[ApiController]
+[Route("api/[controller]")]
 public abstract class ApiController<TEntity, TDto, TDtoRequest, TService> : ControllerBase, IApiController<TEntity, TDto, TDtoRequest, TService>
  where TService : IServiceBase<TEntity, TDto, TDtoRequest>
 {
