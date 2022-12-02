@@ -25,7 +25,7 @@ public class InvoicesService : IInvoicesService
         var validFilter = (filter == null)
             ? new PaginationFilter()
             : new PaginationFilter(filter.PageIndex, filter.PageSize);
-        var list = await _repository.List(c => c.InvoiceId.ToString() == search);
+        var list = await _repository.List(c => search == "" || c.InvoiceId.ToString() == search);
         list = list
             .Skip((validFilter.PageIndex - 1) * validFilter.PageSize)
             .Take(validFilter.PageSize).ToList();

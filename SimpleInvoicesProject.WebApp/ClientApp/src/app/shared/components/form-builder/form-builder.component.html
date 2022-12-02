@@ -41,9 +41,9 @@
                                 <mat-label>{{control.title}}</mat-label>
                                 <mat-select [formControlName]="control.name!"
                                     [multiple]="control.controlType == controlTypes.MultiSelection">
-                                    <mat-option *ngFor="let option of control.data"
-                                        [value]="option[control.valueProp!]">
-                                        {{option[control.labelProp!]}}
+                                    <mat-option *ngFor="let option of control.data;let i = index"
+                                    [value]="control.valueProp ? control.valueProp == 'index' ? i : option[control.valueProp!] : option">
+                                    {{control.labelProp ? option[control.labelProp!] : option}}
                                     </mat-option>
                                 </mat-select>
                                 <mat-icon *ngIf="control.icon" matPrefix>{{control.icon}}</mat-icon>

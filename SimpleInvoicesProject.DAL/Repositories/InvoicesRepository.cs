@@ -43,13 +43,13 @@ public class InvoicesRepository : IRepositoryBase<Invoice>
 
     public async Task<IList<Invoice>> List(Expression<Func<Invoice, bool>>? predicate)
     {
-        var list = await _dbContext.Invoices.Where(predicate ?? (c => true)).ToListAsync();
+        var list = await _dbContext.Invoices.Include(c => c.Customer).Where(predicate ?? (c => true)).ToListAsync();
         return list;
     }
 
     public async Task<Invoice?> Single(int id)
     {
-        var target = await _dbContext.Invoices
+        var target = await _dbContext.Invoices.Include(c => c.Customer)
             .FirstOrDefaultAsync(c => c.InvoiceId == id);
         return target;
     }
