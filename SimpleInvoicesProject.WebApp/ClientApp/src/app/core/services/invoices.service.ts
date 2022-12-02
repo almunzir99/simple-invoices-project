@@ -12,7 +12,7 @@ export class InvoicesService {
 
   private moduleBaseUrl = ``;
 
-  constructor(private http: HttpClient, @Inject("BASE_API_URL") baseUrl: string) {
+  constructor(private http: HttpClient,  @Inject("BASE_API_URL")private baseUrl: string) {
     this.moduleBaseUrl = `${baseUrl}api/Invoices/`
 
   }
@@ -23,6 +23,14 @@ export class InvoicesService {
       title: title
     }
     return this.http.get(`${this.moduleBaseUrl}`, { params: params }) as Observable<PagedResponse<Invoice[]>>;
+  }
+  getCustomerInvoices(customerId:number,pageIndex = 1, pageSize = 10, title = ""): Observable<PagedResponse<Invoice[]>> {
+    var params: any = {
+      PageIndex: pageIndex,
+      PageSize: pageSize,
+      title: title
+    }
+    return this.http.get(`${this.baseUrl}api/customers/${customerId}/invoices`, { params: params }) as Observable<PagedResponse<Invoice[]>>;
   }
   post(item: Invoice) {
     return this.http.post(`${this.moduleBaseUrl}`, item);

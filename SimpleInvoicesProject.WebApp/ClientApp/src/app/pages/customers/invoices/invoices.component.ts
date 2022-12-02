@@ -49,7 +49,7 @@ export class InvoicesComponent implements OnInit {
   async getData() {
     try {
       this.getRequest = RequestStatus.Loading;
-      var result = await firstValueFrom(this._service.get(this.pageIndex, this.pageSize, this.searchValue));
+      var result = await firstValueFrom(this._service.getCustomerInvoices(this.customerId,this.pageIndex, this.pageSize, this.searchValue));
       this.data = result.data;
       this.totalPages = result.totalPages;
       this.totalRecords = result.totalRecords;

@@ -11,12 +11,15 @@ namespace SimpleInvoicesProject.BAL.Services;
 public class CustomersService : ICustomerService
 {
     private readonly IRepositoryBase<Customer> _repository;
+    private readonly IRepositoryBase<Invoice> _invoicesRepository;
+
     private readonly IMapper _mapper;
 
-    public CustomersService(IRepositoryBase<Customer> repository, IMapper mapper)
+    public CustomersService(IRepositoryBase<Customer> repository, IMapper mapper, IRepositoryBase<Invoice> invoicesRepository)
     {
         _repository = repository;
         _mapper = mapper;
+        _invoicesRepository = invoicesRepository;
     }
 
     public async Task<IList<CustomerDto>> ListAsync(PaginationFilter? filter, string? search = "")
@@ -67,5 +70,19 @@ public class CustomersService : ICustomerService
         await _repository.Complete();
     }
     public async Task<int> TotalRecords() => await _repository.TotalRecords();
+    public async Task<IList<InvoiceDto>> CustomerInvoicesListAsync(int customerId,PaginationFilter? filter, string? search = "")
+    {
+        if (search == null) search = "";
+        var validFilter = (filter == null)
+            ? new PaginationFilter()
+            : new PaginationFilter(filter.PageIndex, filter.PageSize);
+        var list = await _invoicesRepository.List(c => c.CustomerId == customerId);
+        list = list.Where(c => search == "" || c.InvoiceId.ToString() == search).ToList();
+        list = list
+            .Skip((validFilter.PageIndex - 1) * validFilter.PageSize)
+            .Take(validFilter.PageSize).ToList();
+        var result = _mapper.Map<IList<Invoice>, IList<InvoiceDto>>(list);
+        return result;
+    }
 
 }

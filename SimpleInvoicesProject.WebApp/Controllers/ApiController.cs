@@ -14,11 +14,11 @@ public abstract class ApiController<TEntity, TDto, TDtoRequest, TService> : Cont
  where TService : IServiceBase<TEntity, TDto, TDtoRequest>
 {
     protected readonly TService Service;
-    private readonly IUriService _uriService;
+    protected readonly IUriService UriService;
     protected ApiController(TService service, IUriService uriService)
     {
         Service = service;
-        _uriService = uriService;
+        UriService = uriService;
     }
     [HttpGet]
     public virtual async Task<IActionResult> GetAsync([FromQuery] PaginationFilter? filter = null, [FromQuery] string? title = "")
@@ -30,7 +30,7 @@ public abstract class ApiController<TEntity, TDto, TDtoRequest, TService> : Cont
         var totalRecords = await Service.TotalRecords();
         if (Request.Path.Value != null)
             return Ok(PaginationHelper.CreatePagedResponse(result,
-                validFilter, _uriService, totalRecords, Request.Path.Value));
+                validFilter, UriService, totalRecords, Request.Path.Value));
         var response = new Response<string>(message: "Operation Failed because Request.Path.Value == null");
         return BadRequest(response);
     }
