@@ -57,9 +57,12 @@ public class InvoicesService : IInvoicesService
         return mappedResult;
     }
 
+    public async Task<int> TotalRecords() => await _repository.TotalRecords();
     public async Task DeleteAsync(int id)
     {
         await _repository.Delete(id);
         await _repository.Complete();
     }
+    
+    
 }

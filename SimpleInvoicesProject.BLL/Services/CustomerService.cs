@@ -64,4 +64,6 @@ public class CustomersService : ICustomerService
         await _repository.Delete(id);
         await _repository.Complete();
     }
+    public async Task<int> TotalRecords() => await _repository.TotalRecords();
+
 }

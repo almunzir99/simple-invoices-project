@@ -9,4 +9,5 @@ public interface IServiceBase<TEntity, TDto, TDtoRequest>
     Task<TDto> CreateAsync(TDtoRequest item);
     Task<TDto> UpdateAsync(int id, TDtoRequest item);
     Task DeleteAsync(int id);
+    Task<int> TotalRecords();
 }

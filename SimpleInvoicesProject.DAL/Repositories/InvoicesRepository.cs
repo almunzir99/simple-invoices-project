@@ -53,6 +53,8 @@ public class InvoicesRepository : IRepositoryBase<Invoice>
             .FirstOrDefaultAsync(c => c.InvoiceId == id);
         return target;
     }
+
+    public async Task<int> TotalRecords() => await _dbContext.Invoices.CountAsync();
     public async Task Complete()
     {
         await _dbContext.SaveChangesAsync();

@@ -14,4 +14,9 @@ public static class RegisterWithDependencyInjection
         services.AddScoped<ICustomerService, CustomersService>();
         services.AddScoped<IInvoicesService, InvoicesService>();
     }
+    public static void ImplementUriService(this IServiceCollection services,
+        Func<IServiceProvider, IUriService> implementationFactory)
+    {
+        services.AddScoped<IUriService>(implementationFactory);
+    }
 }

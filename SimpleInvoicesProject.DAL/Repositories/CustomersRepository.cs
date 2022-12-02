@@ -53,7 +53,7 @@ public class CustomersRepository : IRepositoryBase<Customer>
             .FirstOrDefaultAsync(c => c.CustomerId == id);
         return target;
     }
-
+    public async Task<int> TotalRecords() => await _dbContext.Customers.CountAsync();
     public async Task Complete()
     {
         await _dbContext.SaveChangesAsync();

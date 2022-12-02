@@ -4,10 +4,11 @@ namespace SimpleInvoicesProject.DAL.Interfaces;
 
 public interface IRepositoryBase<T> where  T: class, new()
 {
-    public Task<T> Create(T item);
-    public Task Delete(int id);
-    public Task<T> Update(int id,T item);
-    public Task<IList<T>> List(Expression<Func<T, bool>>? predicate = null);
-    public Task<T?> Single(int id);
-    public Task Complete();
+    Task<T> Create(T item);
+    Task Delete(int id);
+    Task<T> Update(int id,T item);
+    Task<IList<T>> List(Expression<Func<T, bool>>? predicate = null);
+    Task<T?> Single(int id);
+    Task<int> TotalRecords();
+    Task Complete();
 }
