@@ -13,7 +13,7 @@ export class CustomersService {
   private moduleBaseUrl = ``;
 
   constructor(private http: HttpClient, @Inject("BASE_API_URL") baseUrl: string) {
-    this.moduleBaseUrl = `${baseUrl}api/Customers/`
+    this.moduleBaseUrl = `${baseUrl}api/customers/`
 
   }
   get(pageIndex = 1, pageSize = 10, title = ""): Observable<PagedResponse<Customer[]>> {

@@ -1,1 +1,35 @@
- 
+<data-table [show-export-button]="false" [break-word]="false" (createClick)="onCreate()" (searchChange)="onSearch($event)"
+    (sortChange)="onSortChange($event)" (pageChange)="onPageChange($event)" [total]="totalRecords"
+    [loading]="getRequest == 1" [columns]="columns" [rows]="data" [cell-template]="cellTemplate"
+    title="Manage Customers">
+    <ng-template #cellTemplate let-rowData="rowData" let-data="cellData" let-col="colIndex" let-row="rowIndex">
+        <ng-container [ngSwitch]="col">
+            <ng-container *ngSwitchCase="columns.length - 2">
+                <button [routerLink]="[rowData.customerId,'invoices']" matRipple
+                    class="table-act-button primary text-button">
+                    <i class="las la-clipboard"></i>
+                    Manage Invoices
+                </button>
+            </ng-container>
+            <ng-container *ngSwitchCase="columns.length - 1">
+
+                <div class="table-act-buttons">
+
+                    <button (click)="onUpdate(rowData)" matRipple class="table-act-button accent">
+                        <i class="las la-edit"></i>
+                    </button>
+                    <button (click)="onDeleteClick(rowData.customerId)" matRipple class="table-act-button warn">
+                        <i class="las la-trash"></i>
+                    </button>
+                </div>
+            </ng-container>
+            <ng-container *ngSwitchDefault>
+                {{data}}
+            </ng-container>
+
+        </ng-container>
+    </ng-template>
+</data-table>
+
+<dimmer-loading *ngIf="dimRequest == 1">
+</dimmer-loading>

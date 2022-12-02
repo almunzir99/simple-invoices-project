@@ -28,10 +28,6 @@ import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
         path: 'customers',
         loadChildren: () => import('./pages/customers/customers.module').then(c => c.CustomersModule)
       },
-      {
-        path: 'invoices',
-        loadChildren: () => import('./pages/invoices/invoices.module').then(c => c.InvoicesModule)
-      }
     ]),
     BrowserAnimationsModule
   ],
