@@ -1,0 +1,14 @@
+C:\Users\hp\Desktop\Project\SimpleInvoicesProject\SimpleInvoicesProject_DAL\bin\Debug\net6.0\SimpleInvoicesProject_DAL.deps.json
+C:\Users\hp\Desktop\Project\SimpleInvoicesProject\SimpleInvoicesProject_DAL\bin\Debug\net6.0\SimpleInvoicesProject_DAL.runtimeconfig.json
+C:\Users\hp\Desktop\Project\SimpleInvoicesProject\SimpleInvoicesProject_DAL\bin\Debug\net6.0\SimpleInvoicesProject_DAL.dll
+C:\Users\hp\Desktop\Project\SimpleInvoicesProject\SimpleInvoicesProject_DAL\bin\Debug\net6.0\SimpleInvoicesProject_DAL.pdb
+C:\Users\hp\Desktop\Project\SimpleInvoicesProject\SimpleInvoicesProject_DAL\obj\Debug\net6.0\SimpleInvoicesProject_DAL.csproj.AssemblyReference.cache
+C:\Users\hp\Desktop\Project\SimpleInvoicesProject\SimpleInvoicesProject_DAL\obj\Debug\net6.0\SimpleInvoicesProject_DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\Desktop\Project\SimpleInvoicesProject\SimpleInvoicesProject_DAL\obj\Debug\net6.0\SimpleInvoicesProject_DAL.AssemblyInfoInputs.cache
+C:\Users\hp\Desktop\Project\SimpleInvoicesProject\SimpleInvoicesProject_DAL\obj\Debug\net6.0\SimpleInvoicesProject_DAL.AssemblyInfo.cs
+C:\Users\hp\Desktop\Project\SimpleInvoicesProject\SimpleInvoicesProject_DAL\obj\Debug\net6.0\SimpleInvoicesProject_DAL.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\Project\SimpleInvoicesProject\SimpleInvoicesProject_DAL\obj\Debug\net6.0\SimpleInvoicesProject_DAL.dll
+C:\Users\hp\Desktop\Project\SimpleInvoicesProject\SimpleInvoicesProject_DAL\obj\Debug\net6.0\refint\SimpleInvoicesProject_DAL.dll
+C:\Users\hp\Desktop\Project\SimpleInvoicesProject\SimpleInvoicesProject_DAL\obj\Debug\net6.0\SimpleInvoicesProject_DAL.pdb
+C:\Users\hp\Desktop\Project\SimpleInvoicesProject\SimpleInvoicesProject_DAL\obj\Debug\net6.0\SimpleInvoicesProject_DAL.genruntimeconfig.cache
+C:\Users\hp\Desktop\Project\SimpleInvoicesProject\SimpleInvoicesProject_DAL\obj\Debug\net6.0\ref\SimpleInvoicesProject_DAL.dll

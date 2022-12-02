@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleInvoicesProject_DAL", "SimpleInvoicesProject_DAL\SimpleInvoicesProject_DAL.csproj", "{E47B0113-5ED5-4188-99EA-6840905830D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleInvoicesProject_BAL", "SimpleInvoicesProject_BAL\SimpleInvoicesProject_BAL.csproj", "{EB00807C-9684-4F89-91E0-4BDF3476ABF4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleInvoicesProject_WebApp", "SimpleInvoicesProject_WebApp\SimpleInvoicesProject_WebApp.csproj", "{A3231EA1-D506-409F-8094-FA2388228A5C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E47B0113-5ED5-4188-99EA-6840905830D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E47B0113-5ED5-4188-99EA-6840905830D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E47B0113-5ED5-4188-99EA-6840905830D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E47B0113-5ED5-4188-99EA-6840905830D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB00807C-9684-4F89-91E0-4BDF3476ABF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB00807C-9684-4F89-91E0-4BDF3476ABF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB00807C-9684-4F89-91E0-4BDF3476ABF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB00807C-9684-4F89-91E0-4BDF3476ABF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3231EA1-D506-409F-8094-FA2388228A5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3231EA1-D506-409F-8094-FA2388228A5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3231EA1-D506-409F-8094-FA2388228A5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3231EA1-D506-409F-8094-FA2388228A5C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
