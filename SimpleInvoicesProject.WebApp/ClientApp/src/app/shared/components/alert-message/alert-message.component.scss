@@ -1,0 +1,106 @@
+@import 'variables';
+
+.message-container {
+    text-align: center;
+    width: 70vw;
+    max-width: 400px;
+}
+
+.message-container .vector {
+    height: 125px;
+    width: 125px;
+}
+
+.message-container .title {
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.message-container .message {
+    margin-bottom: 30px;
+}
+
+.message-container button {
+    margin: 0px 10px;
+    color: white;
+}
+
+.message-container .buttons .close {
+    background-color: #e9e9e9;
+    color: #555454;
+}
+
+.message-container .errors-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 15px;
+    width: 100%;
+
+    .header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        cursor: pointer;
+
+        i {
+            margin: 0px 10px;
+            transition: 0.3s all ease;
+
+
+        }
+
+        i.rotate {
+            transform: rotate(90deg);
+        }
+    }
+
+    .errors {
+        height: 0px;
+        width: 60%;
+        overflow: auto;
+        background-color: $background-color;
+        color: black;
+        text-align:start;
+        transition: 0.3s all ease;
+        font-size: 12px;
+
+        .content{
+            margin: 10px;
+        }
+    }
+    .errors.dark-mode{
+        background-color: $secondary-dark-background-color;
+        color: white;
+
+    }
+    .errors.opened {
+        height: 70px;
+    }
+}
+
+.green {
+    color: #0fa67f;
+}
+
+.orange {
+    color: #fbb13b;
+}
+
+.red {
+    color: #F44236;
+}
+
+.bg-green {
+    background-color: #0fa67f;
+}
+
+.bg-orange {
+    background-color: #fbb13b;
+}
+
+.bg-red {
+    background-color: #F44236;
+}

@@ -1,0 +1,166 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Provide sufficient contrast against white background */
+@import 'variables';
+
+
+body {
+  background-color: $background-color;
+  padding: 0;
+  margin: 0;
+}
+/**********************************  override material default styles ********************************************/
+mat-form-field {
+  width: 100%;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-outline-thick {
+  color: map-get($map: $primary-color, $key: 300) !important;
+}
+
+.mat-form-field-outline-start {
+  border-radius: 10px 0 0 10px !important;
+  min-width: 10px !important;
+}
+
+.mat-form-field-outline-end {
+  border-radius: 0 10px 10px 0px !important;
+}
+
+.rtl .mat-form-field-outline-start,
+[dir='rtl'] .mat-form-field-outline-start {
+  border-radius: 0px 10px 10px 0px !important;
+
+}
+
+.rtl .mat-form-field-outline-end,
+[dir='rtl'] .mat-form-field-outline-end {
+  border-radius: 10px 0px 0px 10px !important;
+
+}
+
+
+
+/***************************** datatable overrides  *********************************************/
+.datatable-container {
+  .datatable-header {
+    .controls-bar {
+      .mat-form-field-appearance-outline .mat-form-field-infix {
+        padding: 0.65em 0em;
+      }
+
+      .mat-form-field-wrapper {
+        padding-bottom: 0px;
+      }
+    }
+  }
+}
+
+ 
+/***************************  form builder overrides  **************************************************/
+.form-builder-dialog {
+  height: 90vh;
+
+  mat-dialog-container {
+    overflow: hidden;
+  }
+}
+
+/***************************  custom scroll bar  **************************************************/
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #c5c3c385;
+  border-radius: 10px;
+}
+
+.snackbar {
+  background-color: $secondary-background-color;
+  color: map-get($map: $primary-color, $key: 500);
+}
+
+.table-act-buttons {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  margin-left: auto;
+
+}
+
+.table-act-button {
+  border: none;
+  background-color: map-get($map: $primary-color , $key: 500);
+  color: white;
+  flex: 1;
+  min-width: fit-content;
+  cursor: pointer;
+
+  i {
+    font-size: 23px;
+  }
+
+}
+
+.table-act-button.text {
+  padding: 5px 10px;
+}
+
+.table-act-button.accent {
+  background-color: map-get($map: $accent-color , $key: 500);
+}
+
+.table-act-button.warn {
+  background-color: #F44236;
+  color: white;
+
+}
+.active-btn{
+  width: 80px;
+  padding: 5px;
+  font-size: 12px;
+}
+.table-image{
+  height: 60px;
+  width: 60px;
+}
+.table-image.background{
+  border-radius: 10px;
+}
+
+@media screen and (max-width:768px) {
+  .cdk-overlay-pane {
+    max-width: 95vw !important;
+  }
+}
+
+.mat-tab-nav-bar,
+.mat-tab-header {
+  border-bottom: none !important;
+
+}
+
+.mat-tab-label {
+  opacity: 1 !important;
+}
+
+.mat-tab-label-active {
+  color: map-get($map: $primary-color, $key: 500);
+
+  mat-icon {
+    color: map-get($map: $primary-color, $key: 500);
+
+  }
+}
+
+ 
+
+ 
+ 
