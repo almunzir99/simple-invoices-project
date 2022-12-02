@@ -10,4 +10,6 @@ public class InvoiceDto
     public DateTime Date { get; set; }
     public double Value { get; set; }
     public InvoiceState State { get; set; }
+    public DateTime CreatedAt { get; set; }
+    public DateTime LastUpdate { get; set; }
 }

@@ -36,6 +36,8 @@ public class InvoicesRepository : IRepositoryBase<Invoice>
         if (target == null)
             throw new Exception("Target invoice isn't available");
         item.InvoiceId = id;
+        item.CreatedAt = target.CreatedAt;
+        item.LastUpdate = DateTime.Now;
         target = item;
         _dbContext.Invoices.Update(target);
         return target;

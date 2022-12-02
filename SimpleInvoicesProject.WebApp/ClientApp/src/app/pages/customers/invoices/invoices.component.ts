@@ -194,6 +194,7 @@ export class InvoicesComponent implements OnInit {
           var formResult = result as Invoice;
           if (item) {
             formResult['invoiceId'] = item.invoiceId;
+            formResult['createdAt'] = item.createdAt;
             this.update(formResult);
           }
           else

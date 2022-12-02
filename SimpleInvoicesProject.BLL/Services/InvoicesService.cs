@@ -43,6 +43,8 @@ public class InvoicesService : IInvoicesService
     {
         var mappedItem = _mapper.Map<Invoice>(item);
         var savedItem = await _repository.Create(mappedItem);
+        savedItem.CreatedAt = DateTime.Now;
+        savedItem.LastUpdate = DateTime.Now;
         await _repository.Complete();
         var result = _mapper.Map<InvoiceDto>(savedItem);
         return result;

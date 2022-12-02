@@ -36,6 +36,8 @@ public class CustomersRepository : IRepositoryBase<Customer>
         if (target == null)
             throw new Exception("Target customer isn't available");
         item.CustomerId = id;
+        item.CreatedAt = target.CreatedAt;
+        item.LastUpdate = DateTime.Now;
         target = item;
         _dbContext.Customers.Update(target);
         return target;

@@ -9,4 +9,6 @@ public class Customer
     public string? CustomerName { get; set; }
     public string? PhoneNumber { get; set; }
     public IList<Invoice> Invoices { get; set; } = new List<Invoice>();
+    public DateTime CreatedAt { get; set; }
+    public DateTime LastUpdate { get; set; }
 }

@@ -45,6 +45,8 @@ public class CustomersService : ICustomerService
     {
         var mappedItem = _mapper.Map<Customer>(item);
         var savedItem = await _repository.Create(mappedItem);
+        savedItem.CreatedAt = DateTime.Now;
+        savedItem.LastUpdate = DateTime.Now;
         await _repository.Complete();
         var result = _mapper.Map<CustomerDto>(savedItem);
         return result;
