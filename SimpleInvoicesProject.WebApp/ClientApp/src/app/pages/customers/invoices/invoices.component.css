@@ -1,0 +1,20 @@
+.nav-links{
+    display: flex;
+    align-items: center;
+    color: #444;
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+.nav-links .sep{
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    background-color: #444;
+    margin: 0px 15px;
+
+}
+.nav-links .active{
+    color: #4a4cfb;
+    font-weight: bold;
+    cursor: pointer;
+}

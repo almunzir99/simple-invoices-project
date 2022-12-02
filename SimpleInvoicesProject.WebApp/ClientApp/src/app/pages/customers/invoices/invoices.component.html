@@ -1,3 +1,7 @@
+<div class="nav-links">
+    <span [routerLink]="['/','customers']" class="active">Customers</span>
+    <div class="sep"></div><span>Invoices</span>
+</div>
 <data-table [show-export-button]="false" [break-word]="false" (createClick)="onCreate()"
     (searchChange)="onSearch($event)" (sortChange)="onSortChange($event)" (pageChange)="onPageChange($event)"
     [total]="totalRecords" [loading]="getRequest == 1" [columns]="columns" [rows]="data" [cell-template]="cellTemplate"
@@ -6,8 +10,8 @@
         <ng-container [ngSwitch]="col">
             <ng-container *ngSwitchCase="1">{{data['customerName']}}</ng-container>
             <ng-container *ngSwitchCase="3">
-                <button  style="padding: 5px;width:90px;text-align: center" matRipple [class.primary]="data == 0" [class.accent]="data == 1"
-                    class="table-act-button text-button">
+                <button style="padding: 5px;width:90px;text-align: center" matRipple [class.primary]="data == 0"
+                    [class.accent]="data == 1" class="table-act-button text-button">
                     {{states[data]}}
                 </button>
             </ng-container>
