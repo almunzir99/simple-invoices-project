@@ -7,6 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
 builder.Services.RegisterDbContext<AppDbContext>(configuration:builder.Configuration);
+builder.Services.RegisterRepositories();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
